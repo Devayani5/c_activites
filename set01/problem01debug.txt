@@ -1,13 +1,10 @@
 (gdb) b main
 Breakpoint 1 at 0x40146e: file problem01.c, line 5.
-(gdb) r
-Starting program: C:\Users\91906\c_activites\set01/a.exe 
-[New Thread 86804.0x15318]
-[New Thread 86804.0x1531c]
-
-Breakpoint 1, main () at problem01.c:5
+(gdb) l
+1       // 1. Write a C program to print your name.
+2       #include<stdio.h>
+3       int main()
+4       {
 5           printf("Devayani");
-(gdb) s
-Devayani6           return 0;
-(gdb) s
-7       (gdb) 
+6           return 0;
+7       }(gdb)
