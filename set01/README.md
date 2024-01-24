@@ -7,8 +7,8 @@
 2. Write a C program to add two numbers.
 
 ---
-
-3. Write a C program to add two numbers using **pass by value**
+Write a C program to add two numbers using **pass by value**
+3. 
 
 ***Function declarations***
 
