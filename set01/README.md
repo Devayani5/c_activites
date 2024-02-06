@@ -33,7 +33,7 @@ The sum of 1 and 2 is 3
 
 ---
 
-4. c
+4. 
 
 ***Input***
 
