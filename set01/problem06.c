@@ -20,14 +20,15 @@ int main()
 int input(int *a, int *b, int *c);
 {
     printf("enter three numbers:");
-    scanf("%d %d %d",a,b,c);
+    scanf("%d %d %d ",a,b,c);
     return 0;
 }
 void compare(int a, int b, int c, int *largest)
 {
-    *largest=(a >=b && a>=c) ? a: ((b >=a && b>=c) ? b : c);
+    *largest =( a>=b && a>=c ) ? a:((b>=a && b>=c) ? b:c);
 }
-void output(int a, int b, int c, int largest)
-{
-    printf("%d\n",largest);
+void output(int a, int b, int c, int largest){
+ printf("%d\n",largest);
 }
+
+
