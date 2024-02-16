@@ -1,4 +1,6 @@
 // Write a C program to compare three numbers using **pass by value**
+// Write a C program to compare three numbers using **pass by value**
+
 //Function Declarations***
 //int input();
 //int compare(int a, int b, int c);
