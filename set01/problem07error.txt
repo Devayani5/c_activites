@@ -1,0 +1,90 @@
+PS C:\Users\91906\c_activites> git add .
+PS C:\Users\91906\c_activites> git commit -m "test"
+On branch main
+Your branch is ahead of 'origin/main' by 24 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\91906\c_activites> git push .
+Everything up-to-date
+PS C:\Users\91906\c_activites> cd set01
+PS C:\Users\91906\c_activites\set01> gcc problem07.c -O0 -g
+PS C:\Users\91906\c_activites\set01> gdb a.exe 
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\91906\c_activites\set01\a.exe...done.
+(gdb) b main 
+Breakpoint 1 at 0x40146e: file problem07.c, line 15.
+(gdb) r
+Starting program: C:\Users\91906\c_activites\set01/a.exe 
+[New Thread 331568.0x653bc]
+[New Thread 331568.0x657e8]
+
+Breakpoint 1, main () at problem07.c:15
+15          n=input_n();
+(gdb) s
+input_n () at problem07.c:25
+25      printf("enter a number:");
+(gdb) s
+enter a number:26       scanf("%d",&n);
+(gdb) s
+s
+27      return n;
+(gdb) s
+29      }
+(gdb) s
+main () at problem07.c:16
+16          sum = sum_n_nos(n);
+(gdb) s
+sum_n_nos (n=6422476) at problem07.c:34
+34          int sum = 0;
+(gdb) s
+35          for (int i =1;i<=n;i++)
+(gdb) s
+37              sum +=i;
+(gdb) s
+35          for (int i =1;i<=n;i++)
+(gdb) s
+37              sum +=i;
+(gdb) s
+35          for (int i =1;i<=n;i++)
+(gdb) s
+37              sum +=i;
+(gdb) s
+35          for (int i =1;i<=n;i++)
+(gdb) s
+37              sum +=i;
+(gdb) s
+35          for (int i =1;i<=n;i++)
+(gdb) s
+37              sum +=i;
+(gdb) s
+35          for (int i =1;i<=n;i++)
+(gdb) s
+37              sum +=i;
+(gdb) s
+35          for (int i =1;i<=n;i++)
+(gdb) s
+37              sum +=i;
+(gdb) s
+35          for (int i =1;i<=n;i++)
+(gdb) s
+37              sum +=i;
+(gdb) s
+35          for (int i =1;i<=n;i++)
+(gdb) s
+37              sum +=i;
+(gdb) s
+35          for (int i =1;i<=n;i++)
+(gdb) s
+37              sum +=i;
+(gdb) s
+35          for (int i =1;i<=n;i++)
+(gdb) s
