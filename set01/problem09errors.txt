@@ -1,0 +1,114 @@
+PS C:\Users\91906\c_activites> git add .
+PS C:\Users\91906\c_activites> git commit -m "test"
+On branch main
+Your branch is ahead of 'origin/main' by 35 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\91906\c_activites> git push .
+Everything up-to-date
+PS C:\Users\91906\c_activites> cd set01
+PS C:\Users\91906\c_activites\set01> gcc problem09.c -O0 -g
+problem09.c: In function 'main':
+problem09.c:12:7: warning: implicit declaration of function 'input' [-Wimplicit-function-declaration]
+     n=input();
+       ^~~~~
+problem09.c:13:10: warning: implicit declaration of function 'square_root' [-Wimplicit-function-declaration]
+     sqrt=square_root(n,precision);
+          ^~~~~~~~~~~
+problem09.c:14:5: warning: implicit declaration of function 'output' [-Wimplicit-function-declaration]
+     output(n,sqrt);
+     ^~~~~~
+problem09.c: At top level:
+problem09.c:16:8: error: conflicting types for 'input'
+  float input()
+        ^~~~~
+problem09.c:12:7: note: previous implicit declaration of 'input' was here
+     n=input();
+       ^~~~~
+problem09.c:23:7: error: conflicting types for 'square_root'
+ float square_root(float n,float precision)
+       ^~~~~~~~~~~
+problem09.c:13:10: note: previous implicit declaration of 'square_root' was here
+     sqrt=square_root(n,precision);
+          ^~~~~~~~~~~
+problem09.c:33:6: warning: conflicting types for 'output'
+ void output(float n, float sqrroot)
+      ^~~~~~
+problem09.c:14:5: note: previous implicit declaration of 'output' was here
+     output(n,sqrt);
+     ^~~~~~
+PS C:\Users\91906\c_activites\set01> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\91906\c_activites\set01\a.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x401471: file problem10.c, line 15.
+(gdb) r
+Starting program: C:\Users\91906\c_activites\set01/a.exe
+[New Thread 381424.0x4ab54]
+[New Thread 381424.0x65e5c]
+
+Breakpoint 1, main () at problem10.c:15
+15          input_two_strings(string1,string2);
+(gdb) s
+input_two_strings (string1=0x61feb8 "\034")wü_a", string2=0x61fe54 "\201&z\002"_a") at problem10.c:22
+22          printf("Enter the first string:");
+(gdb) s
+Enter the first string:23           scanf("%s",string1);
+(gdb) s
+s
+24          printf("enter the second second string:");
+(gdb) s
+enter the second second string:25           scanf("%s",string2);
+(gdb) s
+s
+26       }
+(gdb) s
+main () at problem10.c:16
+16          result = stringcompare(string1,string2);
+(gdb) s
+stringcompare (string1=0x61feb8 "s", string2=0x61fe54 "s") at problem10.c:30
+30          int i=0;
+(gdb) s
+31          for(i=0; string1[i]==string2[i] && string1[i]!='\0' && string2[i]!='\0';i++)
+(gdb) s
+33              if(string1[i]<string2[i])
+(gdb) s
+37              if(string1[i]>string2[i])
+(gdb) s
+42                  return 2;
+(gdb) s
+45      }
+(gdb) s
+main () at problem10.c:17
+17          output(string1,string2,result);
+(gdb) s
+output (string1=0x61feb8 "s", string2=0x61fe54 "s", result=2) at problem10.c:48
+48          if(result==0)
+(gdb) s
+52          else if(result==1)
+(gdb) s
+57              printf("Both string are same");
+(gdb) s
+Both string are same59  }
+(gdb) s
+main () at problem10.c:19
+19       }
+(gdb) s
+0x00401288 in __register_frame_info ()
+(gdb) q
+A debugging session is active.
+
+        Inferior 1 [process 381424] will be killed.
+
+Quit anyway? (y or n) y
+error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
+PS C:\Users\91906\c_activites\set01> 
