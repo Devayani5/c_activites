@@ -8,8 +8,9 @@
  int main()
  {
     float n,sqrt;
+    float precision=0.000001;
     n=input();
-    sqrt=square_root(n);
+    sqrt=square_root(n,precision);
     output(n,sqrt);
  }
  float input()
@@ -19,7 +20,7 @@
     scanf("%f",&n);
     return n;
  }
-float square_root(float n)
+float square_root(float n,float precision)
 {
     float x_old=1,x_new=n/2;
     float precision=0.000001;
