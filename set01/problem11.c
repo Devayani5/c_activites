@@ -1,21 +1,22 @@
 #include<stdio.h>
-struct_complex{
+struct_complex 
+{
     float real;
     float img;
 };
-typedef struct_comlex complex;
-{;
+typedef struct_complex complex;
+
 complex input_complex();
 complex add_complex(Complex a,complex b);
 void output(complex a,complex b,complex sum);
-}
+
 int main()
 {
     complex a,b,result;
     printf("For first complex number:\n");
     a = input_complex();
     printf("\n For second complex number:\n");
-  b = input_complex();
+      b = input_complex();
   result =add_complex(a,b);
   output(a,b,result);
   return 0; 
