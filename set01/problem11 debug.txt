@@ -1,0 +1,36 @@
+ gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\91906\c_activites\set01\a.exe...done.
+(gdb) l
+32      }
+33
+34      void output(Complex a, Complex b, Complex sum) {
+35              printf("First complex number: %.2f + %.2fi\n", a.real, a.imaginary);
+36              printf("Second complex number: %.2f + %.2fi\n", b.real, b.imaginary);
+37              printf("Sum: %.2f + %.2fi\n", sum.real, sum.imaginary);
+38      }
+39
+40      int main() {
+41              Complex a = input_complex("Enter first complex number (real imaginary): ");
+(gdb) r
+Starting program: C:\Users\91906\c_activites\set01/a.exe 
+[New Thread 162868.0x1a354]
+[New Thread 162868.0x1ba3c]
+Enter first complex number (real imaginary): 12
+12
+Enter second complex number (real imaginary): 12  
+12
+First complex number: 12.00 + 12.00i
+Second complex number: 12.00 + 12.00i
+Sum: 24.00 + 24.00i
+[Inferior 1 (process 162868) exited normally]
+(gdb) q
+PS C:\Users\91906\c_activites\set01>
